@@ -1,0 +1,54 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Table Tennis</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="formContainer">
+      <h1>Capture Score</h1>
+
+      <form id="myForm">
+        <label for="name">Player One:</label>
+        <select
+          id="playerOneName"
+          class="playerNames"
+          name="playerOneName"
+          required
+        >
+          <option value="" selected disabled hidden>Choose Name...</option>
+        </select>
+
+        <label for="score">Score:</label>
+        <input type="number" id="playerOneScore" name="score" required />
+
+        <label for="name">Player Two:</label>
+        <select
+          id="playerTwoName"
+          class="playerNames"
+          name="playerTwoName"
+          required
+        >
+          <option value="" selected disabled hidden>Choose Name...</option>
+        </select>
+
+        <label for="score">Score:</label>
+        <input type="number" id="playerTwoScore" name="score" required />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div id="tableContainer">
+      <h1>Leaderboard</h1>
+      <table id="leaderboardTable">
+        <tr>
+          <td>Name</td>
+          <td>Number of Wins</td>
+        </tr>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
