@@ -16,6 +16,10 @@ db.serialize(() => {
     name TEXT
   )`);
 
+  db.run(
+    `INSERT INTO players (name) VALUES ('John'), ('Emily'), ('Michael'), ('Sarah')`
+  );
+
   db.run(`CREATE TABLE IF NOT EXISTS games (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     player_one_name VARCHAR,
